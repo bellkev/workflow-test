@@ -3,13 +3,13 @@ jobs:
   one:
     working_directory: ~
     docker:
-      image: debian:jessie
+      image: "debian:jessie"
     steps:
       - run: echo 1
   two:
     working_directory: ~
     docker:
-      image: debian:jessie
+      image: "debian:jessie"
     steps:
       - run: echo 2
 workflows:
