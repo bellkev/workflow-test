@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  one:
+    steps:
+      - run: echo 1
+  two:
+    steps:
+      - run: echo 2
+workflows:
+  version: 2
+  one_and_two:
+    jobs:
+      - one
+      - two
