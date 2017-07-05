@@ -1,13 +1,13 @@
 version: 2
 jobs:
   one:
-    working_directory: ~
+    working_directory: "~"
     docker:
       - image: "debian:jessie"
     steps:
       - run: echo 1
   two:
-    working_directory: ~
+    working_directory: "~"
     docker:
       - image: "debian:jessie"
     steps:
